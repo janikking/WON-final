@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="test.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="test.js"></script>
+	</head>
+
+
+	<body>
+		<div ng-app="Calculator" ng-controller="CalculatorController">
+			
+		
+
+			<h1> {{showresult()}} </h1>
+			<div class="grid-container">
+				<button ng-click="onclick(1)" class="grid-item">1</button>
+				<button ng-click="onclick(2)" class="grid-item">2</button>
+				<button ng-click="onclick(3)" class="grid-item">3</button>
+				<button ng-click="onclick(4)" class="grid-item">4</button>
+				<button ng-click="onclick(5)" class="grid-item">5</button>
+				<button ng-click="onclick(6)" class="grid-item">6</button>
+				<button ng-click="onclick(7)" class="grid-item">7</button>
+				<button ng-click="onclick(8)" class="grid-item">8</button>
+				<button ng-click="onclick(9)" class="grid-item">9</button>
+				<button ng-click="onclick(0)" class="grid-item">0</button>
+				<button ng-click="onoperator('+')" class="grid-item">+</button>
+				<button ng-click="onoperator('-')" class="grid-item">-</button>
+				<button ng-click="onoperator('*')" class="grid-item">*</button>
+				<button ng-click="onoperator('/')" class="grid-item">/</button>
+				<button ng-click="calculate()" class="grid-item">=</button>
+			</div>
+
+
+		</div>
+	</body>
+</html>

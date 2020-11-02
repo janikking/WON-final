@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <title>Your Address</title>
+      <link rel="stylesheet" type="text/css" href="apeldoorn.css">
+  </head>
+
+  <body  ng-app="formApp">
+
+    <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+    <div ng-controller="FormController">
+
+        <form ng-submit="Display()">
+            Voornaam:
+            <input type="text"  ng-app="sampleApp" ng-model="user.voornaam"><br>
+            Achternaam: 
+            <input type="text"  ng-app="sampleApp" ng-model="user.achternaam"><br>
+            Leeftijd:
+            <input type="number"  ng-app="sampleApp" ng-model="user.age"><br>
+            Postcode:
+            <input type="text"  ng-app="sampleApp" ng-model="user.postcode"><br>
+            
+            <input type="submit" value="Submit"/>
+
+        </form>
+
+            <table>
+              <tr>
+                <th>Voornaam</th>
+                <th>Achternaam</th>
+                <th>Leeftijd</th>
+                <th>Postcode</th>
+              </tr>
+             <tr ng-repeat='guy in master'>
+                <td>{{guy.voornaam}}</td>
+                <td>{{guy.achternaam}}</td>
+                <td>{{guy.age}}</td>
+                <td>{{guy.postcode}}</td>
+             </tr>
+            </table>
+
+    </div>
+
+    <script src="FormController.js"></script>
+  </body>
+</html>

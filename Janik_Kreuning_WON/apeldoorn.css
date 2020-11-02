@@ -1,0 +1,90 @@
+.grid-container {
+	display: grid;
+	grid-column: 200px 200px;
+}
+
+.mainrow {
+	display: table;
+	padding: 10px;
+	clear: both;
+	content: "";
+}
+
+.maincoll {
+	float: left;
+	width: 50%;
+
+}
+
+.maincolr {
+	float: right;
+	width: 50%;
+}
+
+.mainmain {
+	padding: 100px;
+}
+
+#mainplattegrond {
+	width: 640px;
+	padding: 50px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+#plattegrond {
+	width: 640px;
+	height: 640px;
+}
+
+.mainsize {
+	width: 640px;
+	height: 640px;
+}
+
+.videomain {
+	border: 1px solid black;
+	height: 400px;
+	width: 600px;
+}
+
+#videoalignment {
+	margin: auto;
+}
+
+.scholenmain {
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid black;
+}
+
+#littlemargin {
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid black;
+}
+
+#historyheader {
+	text-align: center;
+}
+
+
+.schoolrow {
+	display: grid;
+	grid-template-columns: auto auto
+}
+
+.schoolcolright {
+
+
+}
+
+table {
+	border: 1px solid black;
+}
